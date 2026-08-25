@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>MONAQ: Multi-Objective Neural Architecture Querying for Time-Series Analysis on Resource-Constrained Devices</title>
+  <title>TS-Debate: Multimodal Collaborative Debate for Zero-Shot Time Series Reasoning</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,16 +52,18 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">MONAQ: Multi-Objective Neural Architecture Querying for Time-Series Analysis on Resource-Constrained Devices</h1>
+            <h1 class="title is-1 publication-title">TS-Debate: Multimodal Collaborative Debate for Zero-Shot Time Series Reasoning</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
-              <span class="author-block"><a href="https://itouchz.github.io" target="_blank">Patara Trirat</a><sup>1</sup> and </span>
-              
-              <span class="author-block"><a href="https://www.kaistdmlab.org/jaegil" target="_blank">Jae-Gil Lee</a><sup>2</sup></span>
+              <span class="author-block"><a href="https://itouchz.github.io" target="_blank">Patara Trirat</a><sup>1</sup>, </span>
+              <span class="author-block"><a href="https://www.linkedin.com/in/jin-myung-kwak-46936595/" target="_blank">Jin Myung Kwak</a><sup>1,2</sup>, </span>
+              <span class="author-block"><a href="https://scholar.google.com/citations?user=XzVo_fAAAAAJ" target="_blank">Jay Heo</a><sup>1</sup>, </span>
+              <span class="author-block"><a href="https://github.com/gmlwns2000" target="_blank">Heejun Lee</a><sup>1,2</sup>, </span>              
+              <span class="author-block"><a href="http://www.sungjuhwang.com/" target="_blank">Sung Ju Hwang</a><sup>1,2</sup></span>
             </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block"><sup>1</sup>DeepAuto.ai, <sup>2</sup>KAIST<br>South Korea<br><strong style="color: darkred">EMNLP 2025</strong> (Findings)<br>Presented at MAS @ ICML 2025</span>
+                    <span class="author-block"><sup>1</sup>DeepAuto.ai, <sup>2</sup>KAIST<br>Seoul, South Korea<br><strong style="color: darkred">EMNLP 2026</strong> (Main)</span>                    
 <!--                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
                   </div>
 
@@ -91,7 +93,7 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/kaist-dmlab/MONAQ" target="_blank"
+                    <a href="https://github.com/deepauto-ai/ts-debate" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -102,7 +104,7 @@
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2505.10607" target="_blank"
+                  <a href="https://arxiv.org/abs/2601.19151" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -128,7 +130,9 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-          <p>The growing use of smartphones and IoT devices necessitates efficient time-series analysis on resource-constrained hardware, which is critical for sensing applications such as human activity recognition and air quality prediction. Recent efforts in hardware-aware neural architecture search (NAS) automate architecture discovery for specific platforms; however, none focus on general time-series analysis with edge deployment. Leveraging the problem-solving and reasoning capabilities of large language models (LLM), we propose MONAQ, a novel framework that reformulates NAS into Multi-Objective Neural Architecture Querying tasks. MONAQ is equipped with multimodal query generation for processing multimodal time-series inputs and hardware constraints, alongside an LLM agent-based multi-objective search to achieve deployment-ready models via code generation. By integrating numerical data, time-series images, and textual descriptions, MONAQ improves an LLM's understanding of time-series data. Experiments on fifteen datasets demonstrate that MONAQ-discovered models outperform both handcrafted models and NAS baselines while being more efficient.</p>
+          <p>
+Large language models (LLMs) are increasingly used as natural-language interfaces to structured data, yet they remain brittle when reasoning over time series. Visual patterns can be misleading, numerical claims can be hallucinated, and textual context can override evidence from the signal. We study zero-shot time-series reasoning as a multimodal evidence arbitration problem for LLM agents. We propose TS-Debate, an inference-time multi-agent protocol that requires no task-specific fine-tuning. TS-Debate first elicits relevant domain knowledge, then assigns modality-specialized agents to textual context, visual patterns, and numerical signals, and coordinates their interaction through a verification-conflict-calibration procedure. Reviewer agents check decision-critical claims with lightweight code execution and numerical lookup, resolve cross-modal disagreement, and calibrate the final answer. Unlike generic multi-agent debate or unconstrained tool use, TS-Debate specifies how evidence is exposed, which claims are checkable, and how verification outcomes shape synthesis. Across 20 tasks from three public benchmarks, TS-Debate improves classification and question answering performance over strong baselines, while revealing that debate is most useful for global-structure and cross-view reasoning rather than local value reconstruction.            
+          </p>
         </div>
       </div>
     </div>
@@ -155,14 +159,7 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@inproceedings{trirat-lee-2025-monaq,
-    title = "{MONAQ}: Multi-Objective Neural Architecture Querying for Time-Series Analysis on Resource-Constrained Devices",
-    author = "Trirat, Patara  and
-      Lee, Jae-Gil",
-    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2025",
-    year = "2025",
-    pages = "16922--16950",
-}</code></pre>
+      <pre><code>TBD</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
