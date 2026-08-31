@@ -1,6 +1,20 @@
-# TS-Debate: Multimodal Collaborative Debate for Zero-Shot Time Series Reasoning
+# TS-Debate
 
-**Code Supplementary Material for ARR May 2026 Submission**
+This is the official implementation of _Multimodal Collaborative Debate for Zero-Shot Time Series Reasoning_ (EMNLP 2026, Main Conference)
+> [[Paper](https://openreview.net/forum?id=8PVTky3Tiz)] [[arXiv](https://arxiv.org/abs/2601.19151)][[Poster](static/pdfs/poster.pdf)][[Slides](static/pdfs/slides.pdf)]
+
+
+
+### Citation
+```bibtex
+@inproceedings{trirat2026tsdebate,
+    title={Multimodal Collaborative Debate for Zero-Shot Time Series Reasoning},
+    author={Patara Trirat and Jin Myung Kwak and Jay Heo and Heejun Lee and Sung Ju Hwang},
+    booktitle={The 2026 Conference on Empirical Methods in Natural Language Processing},
+    year={2026},
+    url={https://openreview.net/forum?id=8PVTky3Tiz}
+}
+```
 
 ---
 
